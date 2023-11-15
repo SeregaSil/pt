@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>{{host.login}}@{{host.ip_address}}:{{host.port}}</h2>
+<p><b>Идентификатор поставщика дистрибутива:</b> {{host.distributor_id}}</p>
+<p><b>Название дистрибутива:</b> {{host.description}}</p>
+<p><b>Номер релиза дистрибутива:</b>  {{host.release}}</p>
+<p><b>Кодовое имя дистрибутива:</b> {{host.codename}}</p>
+<p><b>Имя ядра:</b> {{host.kernel_name}}</p>
+<p><b>Имя машины в сети (имя хоста):</b> {{host.nodename}}</p>
+<p><b>Информация о выпуске ядра:</b> {{host.kernel_release}}</p>
+<p><b>Версия ядра:</b> {{host.kernel_version}}</p>
+<p><b>Архитектура системы:</b> {{host.architecture}}</p>
+
+{% endblock %}

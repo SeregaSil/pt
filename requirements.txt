@@ -1,0 +1,5 @@
+paramiko
+fastapi[all]
+SQLAlchemy
+asyncpg
+alembic
